@@ -1,5 +1,30 @@
 body {
-    border: 1px solid red;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.logo {
+    width: 15%;
+    margin: 70px 0px 30px 0px;
+}
+
+.dashboard-img {
+    max-width: 90%;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 20px;
+    color: white;
+    padding: 12px 60px;
+    background-color: hsl(223, 87%, 63%);
+    margin-bottom: 100px;
 }
 
 #errorMessage {
