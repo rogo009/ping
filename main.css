@@ -85,7 +85,7 @@ button {
     .email-container {
         display: inline-flex;
         flex-wrap: wrap;
-        max-width: 60%;
+        /* max-width: 50%; */
     }
 
     .logo {
@@ -104,7 +104,7 @@ button {
     }
 
     p {
-
+        margin: 20px 0px 40px 0px;
     }
 
     input {
@@ -115,6 +115,16 @@ button {
         padding: 14px 50px;
         margin-left: 15px;
         margin-bottom: 0px;
+        cursor: pointer;
+        transition: background-color .5s;
+    }
+
+    .hover {
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: hsl(223, 100%, 72%);
     }
 
     .dashboard-img {
@@ -125,5 +135,13 @@ button {
 
     .social-icons {
         margin-top: 100px;
+    }
+
+    .icon {
+        transition: background-color .5s;
+    }
+
+    .icon:hover {
+        background-color: hsl(223, 87%, 63%);
     }
 }
