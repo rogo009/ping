@@ -9,17 +9,15 @@ const email = document.getElementById('email')
 const errorElement = document.getElementById('errorMessage');
 
 //function
+
+//this is not working properly, will NOT validate correctly, with every input the error message appears.
 function validateEmail() {
     let message = [];
-    if (email.value === '' || email.value == null); {
-        message.push('Please provide a valid email.');
-        // console.log('Button clicked, but input is empty.');
-    } 
-    
-    if (message.length > 0) {
-        errorElement.innerText = message.join(', ');
+    if (email.value === ''); {
+        message.push('Whoops! It looks like you forgot to add your email.');
+        errorElement.innerText = message;
         email.style.border = '1.2px red solid';
-    }
+    } 
 }
 
 submitEmailBtn.addEventListener('click', validateEmail);
