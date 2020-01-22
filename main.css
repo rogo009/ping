@@ -21,8 +21,8 @@ p {
 
 .text-one {
     align-self: center;
-    font-weight: 100;
     font-size: 1.5em;
+    font-weight: 100;
     margin-right: 5px;
     opacity: 50%;
 }
@@ -85,7 +85,6 @@ button {
     .email-container {
         display: inline-flex;
         flex-wrap: wrap;
-        /* max-width: 50%; */
     }
 
     .logo {
