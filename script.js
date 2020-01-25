@@ -20,4 +20,9 @@ function validateEmail() {
     }
 }
 
+function isEmpty(value) {
+    if(value === '') return true;
+    return false;
+}
+
 submitButton.addEventListener('click', validateEmail);
