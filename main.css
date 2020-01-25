@@ -165,6 +165,13 @@ button {
     }
 }
 
+@media screen and (min-width: 1024px) {
+
+    input {
+    width: 200%;
+    }
+
+}
 
 @media screen and (min-width: 1100px) {
 
@@ -173,7 +180,6 @@ button {
     }
 
 }
-
 
 @media screen and (min-width: 1400px) {
 

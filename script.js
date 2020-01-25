@@ -10,7 +10,7 @@ const errorElement = document.getElementById('errorMessage');
 
 //function
 
-//this is not working properly, will NOT validate correctly, with every input the error message appears.
+//this is not working properly, will NOT validate correctly entered email addresses, with every input the error message appears.
 function validateEmail() {
     let message = [];
     if (email.value === ''); {
