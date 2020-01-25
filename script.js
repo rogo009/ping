@@ -4,8 +4,8 @@
 // 	- The `input` field is empty. The message for this error should say *"Whoops! It looks like you forgot to add your email"*
 // 	- The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Please provide a valid email address"*
 
-const submitEmailBtn = document.getElementById('submitEmail');
-const email = document.getElementById('email')
+const email = document.getElementById('email');
+const submitButton = document.getElementById('submitEmailBtn');
 const errorElement = document.getElementById('errorMessage');
 
 //function
@@ -17,7 +17,7 @@ function validateEmail() {
         message.push('Whoops! It looks like you forgot to add your email.');
         errorElement.innerText = message;
         email.style.border = '1.2px red solid';
-    } 
+    }
 }
 
-submitEmailBtn.addEventListener('click', validateEmail);
+submitButton.addEventListener('click', validateEmail);

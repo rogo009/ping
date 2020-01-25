@@ -28,12 +28,12 @@
   <p>Subscribe and get notified</p>
 
   <div class="email-container">
-    <form id="form" action="#" method="post">
+    <form id="form" action="#" method="post" onsubmit="return validateEmail();">
       <input type="text" name="email" id="email" placeholder="Your email address..." title="Please enter a valid email address">
     </form>
 
   <div id="errorMessage"></div>
-    <button type="submit" id="submitEmail" class="hover">Notify Me</button>
+    <button type="submit" id="submitEmailBtn" class="hover">Notify Me</button>
   </div>
 
   <div>
