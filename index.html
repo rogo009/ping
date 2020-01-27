@@ -15,6 +15,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
 </head>
 <body>
   <div>
@@ -25,15 +26,16 @@
     <h1 class="text-one">We are launching</h1> 
     <h1 class="text-two">soon!</h1class="text-one">
   </div>
+
   <p>Subscribe and get notified</p>
 
   <div class="email-container">
     <form id="form" action="#" method="post" onsubmit="return validateEmail();">
-      <input type="text" name="email" id="email" placeholder="Your email address..." title="Please enter a valid email address">
+      <input id="email" type="text" name="email" placeholder="Your email address..." title="Please enter a valid email address">
     </form>
 
   <div id="errorMessage"></div>
-    <button type="submit" id="submitEmailBtn" class="hover">Notify Me</button>
+    <button id="submitEmailBtn" type="submit" class="hover">Notify Me</button>
   </div>
 
   <div>
