@@ -10,6 +10,11 @@ const errorElement = document.getElementById('errorMessage');
 
 //function
 
+//sounds like i need three functions
+//function one runs each validation method
+//function two runs if input is empty
+//function three runs when input is not empty
+
 //this is not working properly, will NOT validate correctly entered email addresses, with every input the error message appears.
 function validateEmail() {
     let message = [];
