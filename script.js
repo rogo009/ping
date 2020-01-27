@@ -9,11 +9,15 @@ const email = document.getElementById('email'); // targets email input
 const submitButton = document.getElementById('submitEmailBtn'); // targets submit button
 const errorElement = document.getElementById('errorMessage'); // target error div
 
+// Handler
+submitButton.addEventListener('click', validateEmail);
+
 //function
 
 //function one runs each validation method
 //function two runs if input is empty
 //function three runs when input is not empty
+//function four assisn valid or invalid message
 
 function validateEmail() {
     let message = [];
@@ -31,4 +35,3 @@ function isEmpty(value) {
 
 function isEmpty()
 
-submitButton.addEventListener('click', validateEmail);
