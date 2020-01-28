@@ -8,6 +8,7 @@
 const email = document.getElementById('email'); // targets email input
 const submitButton = document.getElementById('submitEmailBtn'); // targets submit button
 const errorElement = document.getElementById('errorMessage'); // target error div
+let message = [];
 
 // Handler
 submitButton.addEventListener('click', validateEmail);
@@ -15,23 +16,31 @@ submitButton.addEventListener('click', validateEmail);
 //function
 
 //function one runs each validation method
-//function two runs if input is empty
-//function three runs when input is not empty
-//function four assisn valid or invalid message
+//function two checks if input is empty
+//function three checks if input is formatted correctly
+//function four assign valid or invalid message
 
 function validateEmail() {
-    let message = [];
+    // let message = [];
     if (email.value === ''); {
-        message.push('Whoops! It looks like you forgot to add your email.');
         errorElement.innerText = message;
+        message.push('Whoops! It looks like you forgot to add your email.');
         email.style.border = '1.2px red solid';
     }
 }
 
+// function checks if input is empty
 function isEmpty(value) {
-    if(value === '') return true;
+    if(value === '' || value == null) return true;
     return false;
 }
 
-function isEmpty()
+isEmpty(email);
 
+function setInvalid() {
+    message.push('Whoops! It looks like you forgot to add your email.');
+}
+
+function setValid() {
+    message.push('');
+}
