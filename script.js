@@ -8,10 +8,14 @@
 const email = document.getElementById('email'); // targets email input
 const submitButton = document.getElementById('submitEmailBtn'); // targets submit button
 const errorElement = document.getElementById('errorMessage'); // target error div
-let message = [];
+
 
 // Handler
 submitButton.addEventListener('click', validateEmail);
+submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log(e.target);
+})
 
 //function
 
@@ -21,7 +25,7 @@ submitButton.addEventListener('click', validateEmail);
 //function four assign valid or invalid message
 
 function validateEmail() {
-    // let message = [];
+    let message = [];
     if (email.value === ''); {
         errorElement.innerText = message;
         message.push('Whoops! It looks like you forgot to add your email.');
@@ -31,11 +35,11 @@ function validateEmail() {
 
 // function checks if input is empty
 function isEmpty(value) {
-    if(value === '' || value == null) return true;
-    return false;
+    if(value === '' || value == null) {
+        email.style.border = '1.2px red solid';
+        console.log('input is empty');
+    }
 }
-
-isEmpty(email);
 
 function setInvalid() {
     message.push('Whoops! It looks like you forgot to add your email.');
@@ -44,3 +48,4 @@ function setInvalid() {
 function setValid() {
     message.push('');
 }
+

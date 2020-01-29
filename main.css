@@ -81,6 +81,14 @@ button {
     width: 20px;
 }
 
+.hover {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(223, 100%, 72%);
+}
+
 /*Media Queries*/
 
 @media screen and (min-width: 800px) {
@@ -136,14 +144,6 @@ button {
 
     #errorMessage {
         justify-self: center;
-    }
-
-    .hover {
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: hsl(223, 100%, 72%);
     }
 
     .dashboard-img {
